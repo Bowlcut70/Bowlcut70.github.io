@@ -327,7 +327,7 @@ body {
     /* this is iphone stuff maybe remove? */
     @media only screen and (min-device-width : 375px) 
       and (max-device-width : 812px)
-      and (-webkit-device-pixel-ratio : 3) {
+      and (-webkit-device-pixel-ratio : 3) and (-webkit-min-device-pixel-ratio : 2) {
       .topnav a:not(:first-child) {display: none;}
       .topnav a.icon {
       float: right;
