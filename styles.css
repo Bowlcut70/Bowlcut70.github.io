@@ -1,0 +1,319 @@
+/* This is new shit */
+@font-face{
+  font-family: 'ANGSA';
+  src: url(webfont/ANGSA.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: ANGSA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    padding: 25px 0px 0px 0px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+.fa {
+    color: white;
+    background: black;
+    margin: 10px;
+}
+
+/* .news-ul li a {
+
+} */
+
+.photoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoRow img {
+    max-width: 25%;
+    height: auto;
+    margin: 10px;
+    border: 5px solid white;
+}   
+
+.topnav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* padding-top: 10px; */
+    /* align-items: center; */
+  }
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    height: auto;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .company{
+      text-align: center;
+      font-weight: bold;
+      font-size: 58px;
+  }
+
+  .slogan{
+    font-size: 30px;
+    text-align: center;
+    font-style: bold;
+    text-transform: uppercase;
+    margin-top: 65px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(159, 202, 202);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: teal;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .services{
+    font-size: 32px;
+    margin: 25px 150px;
+    font-weight: bold;
+  }
+
+  .services a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .X2 ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 0px 75px;
+  }
+
+  .bio div {
+      margin: 40px;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .bio div p{
+    text-align: justify;  
+    font-size: 24px;
+    /* margin: 24px 100px; */
+}
+
+.bio div h3 {
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+/* .theBoss {
+    
+} */
+
+  .button {
+      background-color: teal;
+      padding: 10px 25px;
+      border: 2px solid white;
+      margin-top: 20px;
+      color: white;
+      text-decoration: none;
+      width: 25%;
+      align-self: center;
+  }
+
+  .subpage {
+    text-align: center;
+    font-weight: bold;
+    font-size: 58px;
+    text-transform: uppercase;
+  }
+
+  .leader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .headshots {
+    margin: 10px;
+    text-align: center;
+    font-size: 26px;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+  }
+  
+  
+
+  .headshots h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .headshots h3 {
+   margin-top: 5px;
+   margin-bottom: 30px;
+  }
+
+  .X {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 58px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+  }
+
+  .X2 h2 {
+    text-transform: uppercase;
+  }
+  .X2 {
+    margin: 20px ;
+    text-transform: none;
+    font-size: 36px;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .qualifications li{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+ 
+
+
+
+  @media screen and (max-width: 850px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .topnav.responsive {flex-direction: column;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    /* this is iphone stuff maybe remove? */
+    @media only screen and (min-device-width : 375px) 
+      and (max-device-width : 812px)
+      and (-webkit-device-pixel-ratio : 3) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+      float: right;
+      display: block;
+      }
+      .topnav.responsive {flex-direction: column;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;}
+      }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      align-self: none;
+    }
+    .bio {
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 35px;
+    }
+
+    .bio div p {
+      font-size: 12px;
+    }
+
+    .theBoss {
+      width: 100%;
+      height: auto;
+    }
+
+    .subpage {
+      font-size: 28px
+    }
+
+    .slogan {
+      font-size: 15px
+    }
+
+    .headshots {
+      width: 80%;
+      height: auto;
+      
+    }
+
+    .services {
+      font-size: 16px;
+      margin: 12px 50px;
+    }
+
+    .X {
+      font-size: 29;
+    }
+
+    .X2 {
+      font-size: 18px;
+    }
+
+  }
+
+  
+
+
+
+

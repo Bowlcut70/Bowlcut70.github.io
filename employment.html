@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BBC</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+</head>
+<body>
+  <div class="topnav" id="myTopnav" >
+    <a style="margin-right: auto; " href="index.html" style="padding: 0px 0px;">
+      <img class="logo" src="./mrwiggfiles/logo150.png" alt="Company Logo" >
+    </a>
+    <a href="index.html" >Home</a>
+    <a href="about.html" >About</a>
+    <a href="leadership.html">Leadership Team</a>
+    <a href="experience.html">Experience</a>
+    <a href="services.html">Services</a>
+    <a href="employment.html" class="active">Employment</a>
+    <a href="links.html">Links</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+    </a>
+</div>
+    
+    <div class="services" >
+        <h2 style="text-transform: uppercase;">We are interested in individuals with the following expertise:</h2>
+        <ul class="qualifications" >
+            <li><a href="">Early and Late-stage clinical drug development</a></li>
+            <li><a href="">Basic and translational sciences, toxicology, pharmacology</a></li>
+            <li><a href="">Pharmacovigilance</a></li>
+            <li><a href="">Clinical Operations</a></li>
+            <li><a href="">Project Management</a></li>
+            <li><a href="">Business Development</a></li>
+        </ul>
+        <br/>
+        <h3 style="text-transform: uppercase;">If interested, please contact us at: BethesdaBioMed@gmail.com</h3>
+    </div>
+
+    <div class="footer">
+        <!--Change styling for links-->
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+        <a href="contact.html" target="_blank"><i class="fa fa-phone fa-lg"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+    </div>
+</body>
+</html>
